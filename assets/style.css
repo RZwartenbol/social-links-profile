@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+
+  background-color: hsl(0, 0%, 8%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: hsl(0, 0%, 12%);
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+.profile-pic {
+  width: 8.4rem;
+  border-radius: 100%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.username {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.location {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.job {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.social-links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  width: 26rem;
+}
+
+.link,
+.link:visited {
+  font-weight: 600;
+  background-color: hsl(0, 0%, 20%);
+  padding: 1.2rem 0;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.link:hover,
+.link:active {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(75, 94%, 57%);
+}
+
+@media only screen and (max-width: 375px) {
+  .social-links-container {
+    padding: 3rem;
+  }
+}
